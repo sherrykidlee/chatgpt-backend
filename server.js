@@ -66,7 +66,7 @@ app.post("/chat", async (req, res) => {
                 { role: "user_id", content: message }
             ];
 
-            const confirmation = "Thanks! I've recorded your email. You can now start asking questions. Please be patient - my response may take a few seconds to show.";
+            const confirmation = "Thanks! I've recorded your ID. You can now start asking questions. Please be patient - my response may take a few seconds to show.";
             chatHistory[sessionId].push({ role: "assistant", content: confirmation });
 
             saveChatHistory(chatHistory);
